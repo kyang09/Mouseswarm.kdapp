@@ -13,7 +13,7 @@
   "author": "Kevin",
   "authorNick": "rsonbie",
   "repository": "git://github.com/rsonbie/mouseswarm.kdapp.git",
-  "description": "Mouseswarm : a Koding application created with the blank template.",
+  "description": "Mouseswarm v. 0.2 : Swarming icons. Mouse interaction coming soon.",
   "category": "web-app",
   "source": {
     "blocks": {
