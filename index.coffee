@@ -39,11 +39,11 @@ class MouseswarmMainView extends KDView
     @newBlk = new KDCustomHTMLView
       
       partial: "<span style='position:absolute; margin: -10px 0 0 0 !important; color:#ddd;'>" + blkTitle + "</span/>"
-      cssClass: color + " " + color+"block"+counter
+      cssClass: "msw-"+color + " " + color+"block"+counter
       size: {width:50,height:50}
       domId: counter + "Blk"
       position:  {top:randnumy,left:randnumx}
-      attributes : {onmouseup:"var temp = this.className[0]; var loca = 0; if(temp == 'r'){loca = '/Ace';}else if(temp == 'b'){loca = '/Activity';}else if(temp=='g'){loca='/Terminal';}else if(temp=='p'){loca='/Apps';}else if(temp=='y'){loca='/Teamwork';}else{loca='/DevTools';} window.open(loca);"} 
+      attributes : {onmouseup:"var temp = this.className[4]; var loca = 0; if(temp == 'r'){loca = '/Ace';}else if(temp == 'b'){loca = '/Activity';}else if(temp=='g'){loca='/Terminal';}else if(temp=='p'){loca='/Apps';}else if(temp=='y'){loca='/Teamwork';}else{loca='/DevTools';} window.open(loca);"} 
     #newBlk = document.createElement("div")
     #newBlk.id = color + "block" + counter
     #newBlk.className = color

@@ -1,4 +1,4 @@
-/* Compiled by kdc on Fri Apr 04 2014 00:54:20 GMT+0000 (UTC) */
+/* Compiled by kdc on Wed Apr 16 2014 17:33:33 GMT+0000 (UTC) */
 (function() {
 /* KDAPP STARTS */
 /* BLOCK STARTS: /home/rsonbie/Applications/Mouseswarm.kdapp/index.coffee */
@@ -62,7 +62,7 @@ MouseswarmMainView = (function(_super) {
     }
     this.newBlk = new KDCustomHTMLView({
       partial: "<span style='position:absolute; margin: -10px 0 0 0 !important; color:#ddd;'>" + blkTitle + "</span/>",
-      cssClass: color + " " + color + "block" + counter,
+      cssClass: "msw-" + color + " " + color + "block" + counter,
       size: {
         width: 50,
         height: 50
@@ -73,7 +73,7 @@ MouseswarmMainView = (function(_super) {
         left: randnumx
       },
       attributes: {
-        onmouseup: "var temp = this.className[0]; var loca = 0; if(temp == 'r'){loca = '/Ace';}else if(temp == 'b'){loca = '/Activity';}else if(temp=='g'){loca='/Terminal';}else if(temp=='p'){loca='/Apps';}else if(temp=='y'){loca='/Teamwork';}else{loca='/DevTools';} window.open(loca);"
+        onmouseup: "var temp = this.className[4]; var loca = 0; if(temp == 'r'){loca = '/Ace';}else if(temp == 'b'){loca = '/Activity';}else if(temp=='g'){loca='/Terminal';}else if(temp=='p'){loca='/Apps';}else if(temp=='y'){loca='/Teamwork';}else{loca='/DevTools';} window.open(loca);"
       }
     });
     bg.addSubView(this.newBlk);
